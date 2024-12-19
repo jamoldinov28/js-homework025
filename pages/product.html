@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/main.min.css"> 
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <img src="../assets/logo.png" alt="">
+                </div>
+                <form action="">
+                    <input type="search" name="" id="" placeholder="search.." required>
+                    <button class="navbar__btn">yuborish</button>
+                </form>
+                <ul class="navbar__collection">
+                    <li class="navbar__item">
+                        <a href="#"><span>Discovery</span></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#"><span>About</span></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#"><span>Contact us</span></a>
+                    </li>
+                </ul>
+                <div class="navbar__menu">
+                    <i  onclick="showSidebar()" class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+  
+        </div>
+    </header>
+    <section class="sidebar">
+        <div class="container">
+            <div class="sidebar__text">
+                <button onclick="showSidebar()" class="sidebar__btnn"><i class="fa-solid fa-chevron-right"></i>.</button>
+                <form action="">
+                    <input type="search" name="" id="" placeholder="search.." required>
+                    <button class="sidebar__btn">yuborish</button>
+                </form>
+                <div class="sidebar__text">
+                    <p>Discovery</p>
+                    <p>About</p>
+                    <p>Contact us</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section class="topicc">
+            <div class="container">
+             <div class="topicc__wrapper"></div>
+            </div>
+        </section>
+    </main>
+    <script src="../scripts/products.js"></script>
+</body>
+</html>

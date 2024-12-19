@@ -1,0 +1,56 @@
+.sidebar{
+    position: fixed;
+    z-index: 100;
+    overflow: scroll;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh; 
+    background:#232f3e;
+    transition: .5s;
+    cursor: pointer;
+    &__btnn{
+        background: none;
+        border: none;
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 40px;
+        cursor: pointer;
+        }
+         input{
+            width: 100%;
+            height: 30px;
+            margin-bottom: 5px;
+         }
+         &__btn{  
+            width: 100%;
+            height: 30px;
+            border: none;
+            font-size: 10px;
+            font-weight: 400;
+            background: #3ace3a;
+            color: #fff; 
+            margin-bottom: 20px;
+        }
+        &__btn:active{
+            transform: scale(.95);
+        }
+        p{
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 10px;
+            gap: 50px;
+        }
+   
+ }
+
+ .sidebar::-webkit-scrollbar-thumb{
+     width: 20px;
+     background-color: #000;
+ }
+ .sidebar.show{
+     right: 0;
+     transition: .5s;
+ }

@@ -1,0 +1,58 @@
+.hero{
+    background: url("../assets/bg-image.png") no-repeat center/cover;
+    object-fit: cover;
+    height: 780px;
+    padding:  200px 0;
+    &__card{
+        max-width: 770px;
+        height: 390px;
+        overflow: hidden;
+        border-radius: 2px;
+        background: #F7F8FACC;
+        text-align: center;
+        margin: 0 auto;
+        padding: 30px 50px;
+        h2{
+            margin-top: 10px;
+            font-size: 40px;
+            font-weight: 500;
+            color: #1D252C;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 500;
+            color: #1D252C;
+            max-width: 555px;
+        }
+    }
+    &__btn{
+        padding: 8px 44px;
+        border-radius: 4px;
+        background: #56B280;
+        font-size: 20px;
+        border: none;
+        color: #fff;
+        margin-top: 45px;
+    }
+    &__btn:active{
+        transform: scale(.96);
+    }
+    
+}
+
+@media (max-width: 855px) {
+    .hero{
+        h2{
+            font-size: 25px;
+        }
+        p{
+            margin-top: 15px;
+            font-size: 12px;
+        }
+        &__btn{
+            width: 200px;
+            height: 30px;
+            font-size: 10px;
+        }
+    }
+}
